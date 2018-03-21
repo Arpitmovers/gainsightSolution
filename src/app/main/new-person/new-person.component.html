@@ -1,0 +1,48 @@
+<div class="row">
+	<div class="col-xs-12">
+
+
+		<form  #f="ngForm" (ngSubmit)="onsubmitItem(f)" >
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="form-group">
+					<label for="fname">First  Name</label>	
+					<input id="fname" type="text" class="form-control"  name="fname" [ngModel]="personEdit.fname" /> 
+					</div>
+				</div>
+			</div>
+
+
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="form-group">
+					<label for="lname">Last Name</label>	
+					<input id="lname" type="text" class="form-control" name="lname" [ngModel]="personEdit.lname"/> 
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="form-group">
+					<label for="mail">Email</label>	
+					<input id="mail" type="email" class="form-control"  name="mail" [ngModel]="personEdit.mail"/> 
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="form-group">
+					<label for="title">Title</label>	
+					<input id="title"  type="text" class="form-control"  name="title" [ngModel]="personEdit.title" /> 
+					</div>
+				</div>
+			</div>
+				
+		 <button type="button" class="btn btn-primary" type="submit">Save changes</button>
+      		
+		</form>
+	</div>
+</div>
+

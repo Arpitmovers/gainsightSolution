@@ -1,0 +1,24 @@
+
+<div class="container">           
+  <table class="table table-striped table-bordered">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Social Links</th>
+        <th>Title</th>
+         <th></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let data of PersonArray;let i=index;" (dblclick)="Edit(i)">
+        <td>{{data.fullName}}</td>
+        <td>{{data.mail}}</td>
+        <td><a [href]="'www.facebook.com'"><span class="fa fa-facebook"></span></a></td>
+        <td>{{data.title}}</td>
+        <td><span class="fa fa-trash" (click)="deletePerson(i)"></span></td>
+      </tr>   
+    </tbody>
+  </table>
+</div>

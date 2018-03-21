@@ -1,0 +1,22 @@
+
+<div class="container">
+	<div class="row rowOne">
+		<div class="col-xs-4">
+
+				<button ngClass="newP" class="btn btn-primary"
+					 [disabled]="disableAddBtn" type="button"
+				  	(click)="AddPerson()">+PERSON
+				</button>
+		</div>
+		<div class="col-xs-4  col-xs-push-3">		
+				<div class="input-group srchname">
+				  <input type="text"  class="form-control" (input)="filterRows(inpname)" #inpname placeholder="Search By Name">
+				</div>		
+		</div>
+	</div>
+</div>	
+
+<app-person-table></app-person-table>
+<app-modal #myModal class="addeditwdw" (hide)="toggleModal($event)" [per]="person" [mode]="mode" *ngIf="modalVisible===true"></app-modal>
+
+

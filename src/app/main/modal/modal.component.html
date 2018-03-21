@@ -1,0 +1,17 @@
+<div   #myModal>
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" (click)="closeModel(myModal)" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+          </button>
+                <h4 class="modal-title">Add Details</h4>
+        </div>
+
+        <div class="modal-body" >
+            <app-new-person [personEdit]="per" [editOrNew]="mode"></app-new-person>
+        </div>
+    </div>
+  </div>
+</div>
+
