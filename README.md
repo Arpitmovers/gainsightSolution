@@ -1,4 +1,4 @@
-# GainsightSolution
+# GainSightSolution
 GainSight Solution
 Developed the solution with Angular 5. 
 For running the demo download the contents
